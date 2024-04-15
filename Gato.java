@@ -9,6 +9,6 @@ public final class Gato extends Animal implements Corrida {
     }
 
     public void correr() {
-        System.out.println("Correndo");
+        System.out.println("Gato estou Correndo");
     }
 }

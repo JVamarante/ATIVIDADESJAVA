@@ -12,6 +12,6 @@ public final class Cachorro extends Animal implements Corrida {
 
     @Override
     public void correr() {
-        System.out.println("Estou Correndo!");
+        System.out.println("Cachorro Estou correndo!");
     }
 }

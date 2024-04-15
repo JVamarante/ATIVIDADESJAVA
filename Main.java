@@ -6,7 +6,6 @@ public class Main {
 
         System.out.println("Nome do Cachorro: " + cachorro.getNome());
         System.out.println("Som do Cachorro: " + cachorro.getSom());
-        cachorro.correr();
 
         System.out.println("Nome do Gato: " + gato.getNome());
         System.out.println("Som do Gato:" + gato.getSom());
