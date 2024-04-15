@@ -1,9 +1,11 @@
-abstract class Animal {
+public abstract class Animal {
     protected String nome;
     protected String som;
+    protected TipoAnimal tipo;
 
-    public Animal(String nome) {
+    public Animal(String nome, TipoAnimal tipo) {
         this.nome = nome;
+        this.tipo = tipo;
     }
 
     public String getNome() {
@@ -22,6 +24,10 @@ abstract class Animal {
         this.som = som;
     }
 
+    public TipoAnimal getTipo() {
+        return tipo;
+    }
+
     public abstract void emitirSom();
 
     @Override
@@ -29,6 +35,7 @@ abstract class Animal {
         return "Animal{" +
                 "nome='" + nome + '\'' +
                 ", som='" + som + '\'' +
+                ", tipo=" + tipo +
                 '}';
     }
 }

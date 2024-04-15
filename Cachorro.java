@@ -1,6 +1,6 @@
-class Cachorro extends Animal implements Corrida {
+public final class Cachorro extends Animal implements Corrida {
     public Cachorro(String nome) {
-        super(nome);
+        super(nome, TipoAnimal.MAMIFERO);
         this.setSom("Au au");
         this.correr();
     }
@@ -13,13 +13,5 @@ class Cachorro extends Animal implements Corrida {
     @Override
     public void correr() {
         System.out.println("Estou Correndo!");
-    }
-
-    @Override
-    public String toString() {
-        return "Cachorro{" +
-                "nome='" + nome + '\'' +
-                ", som='" + som + '\'' +
-                '}';
     }
 }

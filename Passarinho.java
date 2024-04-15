@@ -1,6 +1,6 @@
-class Passarinho extends Animal implements Voar {
+public final class Passarinho extends Animal implements Voar {
     public Passarinho(String nome) {
-        super(nome);
+        super(nome, TipoAnimal.AVE);
         this.setSom("Piu");
     }
 
@@ -11,13 +11,5 @@ class Passarinho extends Animal implements Voar {
 
     public void voar() {
         System.out.println("Estou Voando!");
-    }
-
-    @Override
-    public String toString() {
-        return "Passarinho{" +
-                "nome='" + nome + '\'' +
-                ", som='" + som + '\'' +
-                '}';
     }
 }
