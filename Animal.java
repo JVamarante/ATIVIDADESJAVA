@@ -1,8 +1,8 @@
-public abstract class Animal {
- protected String nome;
- protected String som;
+abstract class Animal {
+    protected String nome;
+    protected String som;
 
-    public Animal(String nome){
+    public Animal(String nome) {
         this.nome = nome;
     }
 
@@ -21,6 +21,14 @@ public abstract class Animal {
     public void setSom(String som) {
         this.som = som;
     }
+
     public abstract void emitirSom();
 
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nome='" + nome + '\'' +
+                ", som='" + som + '\'' +
+                '}';
+    }
 }

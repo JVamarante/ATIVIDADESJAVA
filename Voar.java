@@ -1,3 +1,3 @@
-public interface Voar {
-    public void voar();
+interface Voar {
+    void voar();
 }
