@@ -12,4 +12,5 @@ public final class Passarinho extends Animal implements Voar {
     public void voar() {
         System.out.println("Estou Voando!");
     }
+
 }

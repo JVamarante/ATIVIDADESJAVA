@@ -1,8 +1,7 @@
-public class Cachorro extends Animal implements Corrida {
-    public Cachorro(String nome, TipoAnimal mamifero) {
-        super(nome, TipoAnimal.MAMIFERO);
+class Cachorro extends Animal implements Corrida {
+    public Cachorro(String nome, TipoAnimal tipo) {
+        super(nome, tipo);
         this.setSom("Au au");
-        this.correr();
     }
 
     @Override
@@ -10,8 +9,7 @@ public class Cachorro extends Animal implements Corrida {
         System.out.println("Au au");
     }
 
-    @Override
     public void correr() {
-        System.out.println("Cachorro Estou correndo!");
+        System.out.println("Cachorro está Correndo");
     }
 }

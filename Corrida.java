@@ -1,3 +1,3 @@
-public interface Corrida {
-    public void correr();
+interface Corrida {
+    void correr();
 }

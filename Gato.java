@@ -1,4 +1,4 @@
-public final class Gato extends Animal implements Corrida {
+final class Gato extends Animal {
     public Gato(String nome) {
         super(nome, TipoAnimal.MAMIFERO);
         this.setSom("Miau");
@@ -9,6 +9,6 @@ public final class Gato extends Animal implements Corrida {
     }
 
     public void correr() {
-        System.out.println("Gato estou Correndo");
+        System.out.println("Gato está Correndo");
     }
 }

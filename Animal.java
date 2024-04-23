@@ -1,4 +1,4 @@
-public abstract class Animal {
+abstract class Animal {
     protected String nome;
     protected String som;
     protected TipoAnimal tipo;
